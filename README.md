@@ -49,7 +49,13 @@ ipv6 dhcp pool dhcp-v6
  dns-server 2001:4860:4860::8888
  dns-server 2001:4860:4860::8844
 ```
-
+## Configuração de BBA-GROUP
+```cisco    
+    bba-group pppoe PPP
+    virtual-template 1
+    sessions per-mac limit 1
+    sessions per-vlan limit 10000
+```    
 ## Configuração de PPPoE
 
 ```cisco
