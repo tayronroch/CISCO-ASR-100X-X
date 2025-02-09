@@ -95,7 +95,7 @@ ip access-list standard acl-nat-1
 
 Criação do pool de endereços NAT:
 ```cisco
-ip local pool nat-1 100.64.0.1 100.64.0.254
+ip local pool nat-1 100.64.0.2 100.64.0.254
 ip nat settings mode cgn
 no ip nat settings support mapping outside
 ip nat inside source list acl-nat-1 interface GigabitEthernet1 overload
