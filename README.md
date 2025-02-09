@@ -10,6 +10,16 @@ Este repositório documenta a configuração de um roteador **Cisco ASR 1000**, 
 
 ## Configuração da Interface
 
+### Configuração basica para discagem Local PPPoE
+```cisco
+    no ip domain lookup
+    aaa session-id common
+    aaa new-model
+    username 12345 privilege 0 password 0 12345
+    aaa authentication enable default none
+    aaa authentication ppp default local
+```
+
 ### Interface Loopback0
 ```cisco
 interface Loopback0
