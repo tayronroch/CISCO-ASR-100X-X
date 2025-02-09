@@ -129,9 +129,9 @@ ip forward-protocol nd
 
 ## Conclusão
 
-Esta configuração permite a operação de um roteador **Cisco ASR linha 100x** para conexões PPPoE com NAT e suporte a IPv6. Ajustes podem ser necessários conforme o ambiente de rede. Leve em consideração com as configurações apresentadas são o minimo que você precisará para ter um ambiente funcional.
+Esta configuração permite a operação de um roteador **Cisco ASR linha 100x** para conexões PPPoE com NAT e suporte a IPv6. Ajustes podem ser necessários conforme o ambiente de rede. Leve em consideração que as configurações apresentadas são o minimo que você precisará para ter um ambiente funcional.
 
-Questões como Segurança otimização de desempenho e outras boas praticas na implementação disso não foram abordadas.
+Questões como Segurança otimização de desempenho e outras boas praticas na implementação não foram abordadas.
 
 
 ## TESTES REALIZADOS EM LABORATÓRIO
