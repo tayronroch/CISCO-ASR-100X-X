@@ -2,6 +2,12 @@
 
 Este repositório documenta a configuração de um roteador **Cisco ASR 1000**, incluindo interfaces, NAT, PPPoE, e IPv6. 
 
+    Configuração de interfaces para comunicação LAN e WAN.
+    Habilitação de suporte a IPv6 e configuração de um servidor DHCPv6-Stateless (SLAAC).
+    Implementação de PPPoE para autenticação e gerenciamento de conexões de clientes.
+    Definição de rotas estáticas para IPv4 e IPv6.
+    Configuração de NAT para permitir a saída da rede privada para a internet.
+
 ## Configuração da Interface
 
 ### Interface Loopback0
@@ -52,7 +58,6 @@ interface Virtual-Template1
  mtu 1492
  ip unnumbered Loopback0
  ip nat inside
- ip access-group acl-bloqueio-geral-out in
  ip tcp adjust-mss 1452
  no logging event link-status
  peer default ip address pool nat-1
